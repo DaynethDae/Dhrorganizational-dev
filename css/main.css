@@ -3,8 +3,23 @@
     color: black;
 }
 
-.footer {
+footer {
     padding: 10px 10px 0 10px;
     background-color: rgb(252, 145, 145);
     margin-bottom: 0px;
+    margin-top: 10px;
+}
+footer a {
+    color: white;
+}
+
+.card-services {
+    flex: 1 150px;
+    padding: 2px  5px  2px 5px;
+    margin-top: 10px;
+}
+
+.btn-card {
+    width: 100% ;
+    
 }
