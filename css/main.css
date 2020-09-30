@@ -1,16 +1,19 @@
 .jumbotron {
-    background-color: rgb(252, 145, 145);
+    background-color: rgb(255, 208, 208);
     color: black;
+    margin-top: 50px;
 }
+
+
 
 footer {
     padding: 10px 10px 0 10px;
-    background-color: rgb(252, 145, 145);
+    background-color: rgb(255, 208, 208);
     margin-bottom: 0px;
     margin-top: 10px;
 }
 footer a {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .card-services {
@@ -19,7 +22,4 @@ footer a {
     margin-top: 10px;
 }
 
-.btn-card {
-    width: 100% ;
-    
-}
+.btn-card c
