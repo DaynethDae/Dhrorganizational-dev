@@ -17,8 +17,36 @@ footer a {
 }
 
 .card-services {
-    flex: 1 150px;
-    padding: 2px  5px  2px 5px;
+    flex: 1 200px;
+    padding: 0px  0px  0px 0px;
     margin-top: 10px;
+    border: none;
 }
 
+.card-body {
+    padding: 10px  0px  10px 0px;
+    margin-top: 10px;
+    border: none;
+}
+
+
+.btn-card {
+    width: 100%;
+    border-radius: 0p;
+    margin: 0px 0px 0px 0px;
+
+}
+
+
+.card-footer {
+    width: 100%;
+    background-color: white;
+    border: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+}
+
+.btn-footer{
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+}
