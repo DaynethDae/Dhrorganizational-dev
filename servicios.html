@@ -16,6 +16,8 @@
 
 
 <body>
+
+  <!-- NAV BAR -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="#">DHR</a>
         
@@ -34,10 +36,12 @@
         </div>
       </nav>
 
-      
+<!-- JUMBOTRON -->
     <div class="jumbotron">
         <h1 class="display-4">Dhr Organizational Dev</h1>
      </div>
+
+<!-- BREADCRUMB -->
 
      <div class="container">
         <nav aria-label="breadcrumb">
@@ -46,115 +50,123 @@
             <li class="breadcrumb-item active" aria-current="page">Servicios</li>
           </ol>
         </nav>
-
-        <div class="table-responsive" >
-        <table class="table table-borderless ">
-            <thead class="thead-dark">
-              <tr>
-                <th scope="col">Servicios</th>
-                <th scope="col">   Básico   <br><span class="oi oi-star"> </span></th>
-                <th scope="col">   Medium  <br> <span class="oi oi-star"> </span> <span class="oi oi-star"> </span></th>
-                <th scope="col">   Premium   <br><span class="oi oi-star"> </span> <span class="oi oi-star"></span> <span class="oi oi-star"></span></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">Modelo de Mapa de Procesos
-                </th>
-                <td>$ 5000</td>
-                <td>$ 11000</td>
-                <td>$ 19000</td>
-              </tr>
-              <tr>
-                <th scope="row">Comunicación Estrategica desde RH
-                </th>
-                <td>$ 5000</td>
-                <td>$ 8000</td>
-                <td>$ 12000</td>
-              </tr>
-              <tr>
-                <th scope="row">Reclutamiento y Selección Eficiente</th>
-                <td>$ 7000</td>
-                <td>$ 12000</td>
-                <td>$ 25000</td>
-              </tr>
-              <tr>
-                <th scope="row">Estructura del Depto. RH</th>
-                <td>$ 9000</td>
-                <td>$ 16500</td>
-                <td>$ 30000</td>
-              </tr>
-              <tr>
-                <th scope="row">Potencia tu Curriculum</th>
-                <td>$ 1000</td>
-                <td>$ 1800</td>
-                <td>$ 2300</td>
-              </tr>
-
-            </tbody>
-          </table>
-        </div>
-        </table>
-    </div>
-
-    <div class="d-flex  justify-content-center" >
-
-    <div class="card" style="width: 18rem;">
-        <div class="card-header" style="background-color:#212529; color: white;">
-            Formas de Pago       
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Transferencia</li>
-          <li class="list-group-item">Paypall</li>
-          <li class="list-group-item">MercadoPago</li>
-        </ul>
-      </div>
-
-    </div>
         
 
 
+<!-- TABS  -->
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" >
+      <a class="nav-link active" id="precios-tab" data-toggle="tab" href="#precios" role="tab" aria-controls="precios" aria-selected="true">Precios</a>
+    </li>
+    <li class="nav-item" >
+      <a class="nav-link" id="metodos-tab" data-toggle="tab" href="#metodos" role="tab" aria-controls="metodos" aria-selected="false">Metodos de Pago</a>
+    </li>
+    <li class="nav-item" >
+      <a class="nav-link" id="comentarios/tab" data-toggle="tab" href="#comentarios" role="tab" aria-controls="comentarios" aria-selected="false">Comentarios</a>
+    </li>
+  </ul>
+
+<!-- TAB CONTENT -->
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="precios" role="tabpanel" aria-labelledby="precios-tab">
+      <div class="table-responsive" >
+        <table class="table table-borderless ">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Servicios</th>
+              <th scope="col">   Básico   <br><span class="oi oi-star"> </span></th>
+              <th scope="col">   Medium  <br> <span class="oi oi-star"> </span> <span class="oi oi-star"> </span></th>
+              <th scope="col">   Premium   <br><span class="oi oi-star"> </span> <span class="oi oi-star"></span> <span class="oi oi-star"></span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Modelo de Mapa de Procesos
+              </th>
+              <td>$ 5000</td>
+              <td>$ 11000</td>
+              <td>$ 19000</td>
+            </tr>
+            <tr>
+              <th scope="row">Comunicación Estrategica desde RH
+              </th>
+              <td>$ 5000</td>
+              <td>$ 8000</td>
+              <td>$ 12000</td>
+            </tr>
+            <tr>
+              <th scope="row">Reclutamiento y Selección Eficiente</th>
+              <td>$ 7000</td>
+              <td>$ 12000</td>
+              <td>$ 25000</td>
+            </tr>
+            <tr>
+              <th scope="row">Estructura del Depto. RH</th>
+              <td>$ 9000</td>
+              <td>$ 16500</td>
+              <td>$ 30000</td>
+            </tr>
+            <tr>
+              <th scope="row">Potencia tu Curriculum</th>
+              <td>$ 1000</td>
+              <td>$ 1800</td>
+              <td>$ 2300</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>      
+    </div>
+    <div class="tab-pane fade" id="metodos" role="tabpanel" aria-labelledby="metodos-tab">
+      <div class="d-flex  justify-content-center" >
+        <div class="card" style="width: 18rem;">
+            <div class="card-header" style="background-color:#212529; color: white;">
+                Formas de Pago       
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Transferencia</li>
+              <li class="list-group-item">Paypall</li>
+              <li class="list-group-item">MercadoPago</li>
+            </ul>
+          </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">    
+      <p>No hay comentarios disponible</p>
+    </div>
+  </div>
+
+</div>
 
 
-
-       
-    
-
-
-
-
-
-
-
-
+<!-- FOOTER -->
 
 
 
 <footer>
-      <div class="row">
-          <div class="col-sm-4 d-flex flex-column">
-              <a href="https://www.instagram.com/dhr_org/">Instagram</a>
-              <a href="https://l.instagram.com/?u=https%3A%2F%2Fdhrorganizationaldev.wordpress.com%2F&e=ATPlluM1y5rt2qekjrd24Uj2tuJdKlkhyvwg_XuUZz9w0WqgSEjRL01Vr7THwCUls6Cf-xsmjeegffkb6ZIZxuA&s=1">Blog</a>
-              <a href="https://www.facebook.com/Dhr-Organizational-Dev-113661577085581">Facebook</a>
-          </div>
+  <div class="row">
+      <div class="col-sm-4 d-flex flex-column">
+          <a href="https://www.instagram.com/dhr_org/">Instagram</a>
+          <a href="https://l.instagram.com/?u=https%3A%2F%2Fdhrorganizationaldev.wordpress.com%2F&e=ATPlluM1y5rt2qekjrd24Uj2tuJdKlkhyvwg_XuUZz9w0WqgSEjRL01Vr7THwCUls6Cf-xsmjeegffkb6ZIZxuA&s=1">Blog</a>
+          <a href="https://www.facebook.com/Dhr-Organizational-Dev-113661577085581">Facebook</a>
+      </div>
 
-          <div class="col-sm-4">
-              <address>
-                <h4>Oficina Central</h4>
-                <p><span class="oi oi-pin"></span> Villa del Parque, CABA, Argentina</p>
-          
-              <p></p><span class="oi oi-phone"> </span> +54 9 11 33424953</p>
-              <p><span class="oi oi-envelope-closed"></span> dhr.organizationaldev@gmail.com</p>
-             
-              </address>
-          </div>
+      <div class="col-sm-4">
+          <address>
+            <h4>Oficina Central</h4>
+            <p><span class="oi oi-pin"></span> Villa del Parque, CABA, Argentina</p>
+      
+          <p></p><span class="oi oi-phone"> </span> +54 9 11 33424953</p>
+          <p><span class="oi oi-envelope-closed"></span> dhr.organizationaldev@gmail.com</p>
+         
+          </address>
+      </div>
 
-          <div class="col-sm-4 d-flex flex-column align-items-end">
-            <a href="https://www.instagram.com/dhr_org/">Nosotros</a>
-            <a href="https://l.instagram.com/">Contacto</a>
-            <a href="servicios.html">Servicios</a>
-        </div>
-    </div>
+      <div class="col-sm-4 d-flex flex-column align-items-end">
+        <a href="https://www.instagram.com/dhr_org/">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="servicios.html">Servicios</a>        
+      </div>
+</div>
 </footer>
 
   
