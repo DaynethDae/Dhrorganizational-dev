@@ -4,6 +4,16 @@
     margin-top: 50px;
 }
 
+.cardaccor {
+    border: none;
+    
+}
+
+.card-accorheader {
+    border: none;
+    background-color: white;
+}
+
 
 
 footer {
@@ -53,5 +63,9 @@ footer a {
 
 
 .tab-content {
+    padding-top: 10px;
+}
+
+.pcollapse  {
     padding-top: 10px;
 }

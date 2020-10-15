@@ -24,7 +24,7 @@
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">    <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>    </li>
           <li class="nav-item">     <a class="nav-link" href="servicios.html">Servicios</a>      </li>
-          <li class="nav-item">       <a class="nav-link" href="#">Freebies</a>        </li>
+          <li class="nav-item">       <a class="nav-link" href="freebies.html">Freebies</a>        </li>
           <li class="nav-item">       <a class="nav-link" href="Nosotros.html">Nosotros</a>        </li>
           <li class="nav-item">       <a class="nav-link" href="contacto.html">Contacto</a>        </li>
 
@@ -45,37 +45,52 @@
           <li class="breadcrumb-item active" aria-current="page">Home</li>
         </ol>
       </nav>
+    
+
+<!-- BUTTON COLLAPSE  -->
+  <div class="row">
+      <div class="col-sm-4">
+          <button class="btn btn-secondary btn-collap" type="button" data-toggle="collapse" data-target="#plantillas" aria-expanded="false" aria-controls="multiCollapseExample1">Plantillas</button>
+      </div>
+      <div class="col-sm-4">   
+          <button class="btn btn-secondary btn-collap" type="button" data-toggle="collapse" data-target="#teoria" aria-expanded="false" aria-controls="multiCollapseExample2">Teoría</button>
+      </div>
+      <div class="col-sm-4">
+         <button class="btn btn-secondary btn-collap" type="button" data-toggle="collapse" data-target="#procesos" aria-expanded="false" aria-controls="multiCollapseExample3">Procesos</button>
+      </div>
     </div>
- <!-- CONTENT -->
-    <div class="container">
-          <div class="row">
-            <div class="col-sm-4">
-              <h3>Plantillas</h3>
-              <p>Formatos, plantillas, guias para aplicar.</p> 
-            </div>
+<!-- CONTENT COLLAPSE-->
 
-            <div class="col-sm-4">
-              <h3>Teoría</h3>
-              <p> Conceptos y todo el conocimiento que te dara la mejor visión del RRHH para ti y tu negocio.
-              </p>
-            </div>
+  <div class="row">
 
-            <div class="col-sm-4">
-              <h3>Procesos</h3>
-              <p> Definición y esructura de procesos de cada area de la organización.
-              </p>
-            </div>
-    </div> 
+      <div class=" col-sm-4 collapse multi-collapse" id="plantillas">
+          <p class="pcollapse">
+            Formatos, plantillas, guias para aplicar.
+          </p> 
+      </div>
+      <div class=" col-sm-4 collapse multi-collapse" id="teoria">
+          <p class="pcollapse"> 
+            Conceptos y todo el conocimiento que te dara la mejor visión del RRHH para ti y tu negocio.
+          </p> 
+      </div>
+      <div class="col-sm-4 collapse multi-collapse" id="procesos">
+          <p class="pcollapse"> 
+            Definición y esructura de procesos de cada area de la organización.
+          </p> 
+        </div>
+  </div>
+
+
  <!-- BANNER -->
     <hr>
-    <div class=" justify-content-around" >
-      <img src="images/Imagen2.jpg" alt="Banner" class="img-fluid">
+    <div class="justify-content-around" >
+      <img src="images/bacnner.jpeg" alt="Banner" class="img-fluid ">
     </div>
     <hr>
 
 <!-- CARDS CONTENT -->
 
-      <div class="d-flex flex-wrap flex-row-reverse">
+    <div class="d-flex flex-wrap flex-row-reverse">
         
         <div class="card card-services d-flex flex-column justify-content-around ml-1" style="width: 18rem;">
           <img src="images/Cv.jpg" class="card-img-top" alt="CV imagen">
@@ -149,10 +164,10 @@
         </div>
         </div>
 
-          </div>
+    </div>
     </div>
 
-
+  </div>
 <!-- FOOTER -->
     <footer>
       <div class="row">
