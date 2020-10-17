@@ -95,7 +95,7 @@
         <div class="card card-services d-flex flex-column justify-content-around ml-1" style="width: 18rem;">
           <img src="images/Cv.jpg" class="card-img-top" alt="CV imagen">
           <div class="card-body">
-              <h3 class="card-title">Potencia tu Curriculum</h3>
+              <h3 class="card-title" data-toggle="tooltip" data-placement="top" title="No esperes más">Potencia tu Curriculum</h3>
               <p class="card-text">Obten una guia completa para mejorar tu empleabilidad, crear tu CV y conseguir el empleo que buscas. </p>
           </div>
           <div class="card-footer">
@@ -111,7 +111,7 @@
         <div class=" card card-services d-flex flex-column justify-content-between ml-1" style="width: 18rem;">
           <img src="images/RH.jpg" class="card-img-top" alt="RRHH img">
           <div class="card-body">
-              <h3 class="card-title">Estructura del Depto. RH </h3>
+              <h3 class="card-title" data-toggle="popover" data-placement="top" data-content="Consulta ofertas por compras conjuntas">Estructura del Depto. RH </h3>
               <p class="card-text">Obten una guia completa para crear tu depto de RH.</p>
           </div>
           <div class="card-footer">
@@ -125,7 +125,7 @@
         <div class=" card card-services d-flex flex-column justify-content-between ml-1" style="width: 18rem;">
           <img src="images/Reclut.jpg" class="card-img-top" alt="Reclutamiento img">
           <div class="card-body">
-              <h3 class="card-title">Reclutamiento y Selección Eficiente </h3>
+              <h3 class="card-title" data-toggle="popover" data-placement="top" data-content="Consulta ofertas por compras conjuntas">Reclutamiento y Selección Eficiente </h3>
               <p class="card-text">Obten una guia completa para etructurar el proceso de atración de personal.</p>
           </div>
           <div class="card-footer">
@@ -139,7 +139,7 @@
         <div class=" card card-services d-flex flex-column justify-content-between ml-1" style="width: 18rem;">
           <img src="images/Comunicacion.jpg" class="card-img-top" alt="comunicacion img">
           <div class="card-body">
-              <h3 class="card-title">Comunicación Estrategica desde RH</h3>
+              <h3 class="card-title" data-toggle="popover" data-placement="top" data-content="Consulta ofertas por compras conjuntas">Comunicación Estrategica desde RH</h3>
               <p class="card-text">Obten una guia completa para crear y evaluar los canales de comunicación en tu empresa.</p>
           </div>
           <div class="card-footer">
@@ -153,12 +153,12 @@
         <div class=" card card-services d-flex flex-column justify-content-between ml-1" style="width: 18rem;">
           <img src="images/Mapas.jpg" class="card-img-top" alt="rrhh img">
           <div class="card-body">
-              <h3 class="card-title">Modelo de Mapa de Procesos</h3>
+              <h3 class="card-title" data-toggle="tooltip" data-placement="top" title="No esperes más">Modelo de Mapa de Procesos</h3>
               <p class="card-text">Obten una guia completa para crear los mapas de procesos oganizacionales.</p>
           </div>
           <div class="card-footer">
-            <p class="btn-card" data-toggle="modal" data-target="#exampleModal"><a class="btn btn-secondary btn-card" role="button"><span class="oi oi-cart"></span> Lo quiero</a></p>
-            <small class="btn-footer text-muted"><span class="oi oi-bolt"></span> 
+            <p class="btn-card" data-toggle="modal" data-target="#exampleModal"><a class="btn btn-secondary btn-card"  role="button"><span class="oi oi-cart"></span> Lo quiero</a></p>
+            <small class="btn-footer text-muted "><span class="oi oi-bolt"></span> 
               Oferta por tiempo limitado
             </small>
         </div>
@@ -189,7 +189,7 @@
           </div>
           <div class="form-group">
             <label for="recipient-mail" class="col-form-label">Correo:</label>
-            <input type="mail" class="form-control" id="recipient-mail">
+            <input type="mail" class="form-control" id="recipient-mail" >
           </div>
           <div class="form-group">
             <label for="recipient-telf" class="col-form-label">Numero de Telefono:</label>
@@ -202,7 +202,7 @@
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Enviar mensaje</button>
+        <button type="button" class="btn btn-primary" data-toggle="popover" data-placement="top" data-content="Consulta enviada">Enviar mensaje</button>
       </div>
     </div>
   </div>
@@ -252,8 +252,16 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+        $("[data-toggle='popover']").popover();
+      });
+    </script>
+
   </body>
 </html>
