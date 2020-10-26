@@ -200,7 +200,7 @@
               <p class="card-text">Obten una guia completa para crear los mapas de procesos oganizacionales.</p>
           </div>
           <div class="card-footer">
-            <p class="btn-card" data-toggle="modal" data-target="#exampleModal"><a class="btn btn-secondary btn-card"  role="button"><span class="oi oi-cart"></span> Lo quiero</a></p>
+            <p class="btn-card"  data-toggle="modal" data-target="#exampleModal"><a  id="myModalbtn" class="btn btn-secondary btn-card"  role="button"><span class="oi oi-cart"></span> Lo quiero</a></p>
             <small class="btn-footer text-muted "><span class="oi oi-bolt"></span> 
               Oferta por tiempo limitado
             </small>
@@ -258,16 +258,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 <!-- FOOTER -->
     <footer>
       <div class="row">
@@ -300,18 +290,38 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
+
+    <!-- Aditional  JavaScript -->
     <script>
       $(function () {
         $('[data-toggle="tooltip"]').tooltip()
         $("[data-toggle='popover']").popover();
         $('.carousel').carousel({
           interval: 2000
+        });
+
+        $('#exampleModal').on('show.bs.modal', function (e) {
+          console.log("Muestra el modal");
+          $('#myModalbtn').removeClass('btn-secondary', true);
+          $('#myModalbtn').addClass('btn-danger');
+          $('#myModalbtn').prop('disabled', true);
         })
-      });
+        $('#exampleModal').on('shown.bs.modal', function (e) {
+          console.log("Muestró el modal")
+        })
+        $('#exampleModal').on('hide.bs.modal', function (e) {
+          console.log("Oculta el modal")
+        })
+        $('#exampleModal').on('hidden.bs.modal', function (e) {
+          console.log("Ocultó el modal");
+          $('#myModalbtn').prop('disabled', false);
+        })
+
+    });
     </script>
 
   </body>
