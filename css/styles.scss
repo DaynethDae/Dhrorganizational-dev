@@ -1,0 +1,87 @@
+$verde: #f5a398;
+$rojo: #ffffff;
+$amarillo: #732925;
+
+@mixin margins ($top, $bottom){
+    margin-top:$top ;
+    margin-bottom:$bottom ;
+}
+
+@mixin colorPadding ($color, $padding){
+    color: $color ;
+    padding: $padding;    
+}
+    
+
+.jumbotron {
+    background-color: $verde ;
+    @include margins (50px, 10px);
+    @include colorPadding (white, 10px 60px 10px 0px)
+}
+
+.cardaccor {
+    border: none;
+}
+
+.card-accorheader {
+    border: none;
+    background-color: $rojo;
+}
+
+.btn-collap {
+    background-color: $amarillo;
+}
+
+
+footer {
+    padding: 10px 10px 0 10px;
+    background-color: $verde ;
+    @include margins (10px, 0px)
+}
+footer a {
+    color: rgb(0, 0, 0);
+}
+
+.card-services {
+    flex: 1 200px;
+    padding: 0px  0px  0px 0px;
+    @include margins (10px, 0px)
+    border: none;
+}
+
+.card-body {
+    padding: 10px  0px  10px 0px;
+    @include margins (10px, 0px)
+    border: none;
+}
+
+
+.btn-card {
+    width: 100%;
+    border-radius: 0p;
+    @include margins (10px, 0px)
+
+}
+
+
+.card-footer {
+    width: 100%;
+    background-color: $rojo;
+    border: none;
+    @include margins (10px, 0px)
+    padding: 0px;
+}
+
+.btn-footer{
+    @include margins (10px, 0px)
+    padding: 0px;
+}
+
+
+.tab-content {
+    padding-top: 10px;
+}
+
+.pcollapse  {
+    padding-top: 10px;
+}

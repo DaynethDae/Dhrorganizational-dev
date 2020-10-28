@@ -1,5 +1,5 @@
 .jumbotron {
-    background-color: rgb(255, 208, 208);
+    background-color: Coral  ;
     color: black;
     margin-top: 50px;
 }
@@ -17,7 +17,7 @@
 
 footer {
     padding: 10px 10px 0 10px;
-    background-color: rgb(255, 208, 208);
+    background-color: Coral ;
     margin-bottom: 0px;
     margin-top: 10px;
 }

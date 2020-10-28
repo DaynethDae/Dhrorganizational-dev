@@ -1,0 +1,63 @@
+.jumbotron {
+  background-color: #f5a398;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  color: white;
+  padding: 10px 60px 10px 0px; }
+
+.cardaccor {
+  border: none; }
+
+.card-accorheader {
+  border: none;
+  background-color: #ffffff; }
+
+.btn-collap {
+  background-color: #732925; }
+
+footer {
+  padding: 10px 10px 0 10px;
+  background-color: #f5a398;
+  margin-top: 10px;
+  margin-bottom: 0px; }
+
+footer a {
+  color: black; }
+
+.card-services {
+  flex: 1 200px;
+  padding: 0px  0px  0px 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border: none; }
+
+.card-body {
+  padding: 10px  0px  10px 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border: none; }
+
+.btn-card {
+  width: 100%;
+  border-radius: 0p;
+  margin-top: 10px;
+  margin-bottom: 0px; }
+
+.card-footer {
+  width: 100%;
+  background-color: #ffffff;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding: 0px; }
+
+.btn-footer {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding: 0px; }
+
+.tab-content {
+  padding-top: 10px; }
+
+.pcollapse {
+  padding-top: 10px; }
